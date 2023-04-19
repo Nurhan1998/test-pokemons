@@ -1,0 +1,38 @@
+@import "../../../common/styles/variables.scss";
+@import "../../../common/styles/mixins.scss";
+
+.info {
+  @include flexColumn;
+
+  gap: 10px;
+
+  &__name {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+  }
+
+  &__tags {
+    display: flex;
+    gap: 5px;
+
+    & > span {
+      max-width: 80px;
+    }
+  }
+
+  &__stats {
+    @include flexColumn;
+
+    text-transform: capitalize;
+    gap: 2px;
+
+    &_title {
+      color: $card-stat-title;
+    }
+
+    &_value {
+      font-style: italic;
+      margin-left: 3px;
+    }
+  }
+}

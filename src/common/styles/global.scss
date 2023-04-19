@@ -1,0 +1,81 @@
+@import "./variables.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.content {
+  max-width: $content-max-width;
+  padding-left: $content-horizontal-padding;
+  padding-right: $content-horizontal-padding;
+  margin: 0 auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+// Color of pokemon type should come from api but pokeapi.co doesn't provide it
+.color-type {
+  &-fighting {
+    background-color: #d56722;
+  }
+  &-flying {
+    background-color: #6c8798;
+  }
+  &-poison {
+    background-color: #a566b6;
+  }
+  &-ground {
+    background-color: #867528;
+  }
+  &-rock {
+    background-color: #67560c;
+  }
+  &-bug {
+    background-color: #548818;
+  }
+  &-ghost {
+    background-color: #7b61a2;
+  }
+  &-steel {
+    background-color: #6a8888;
+  }
+  &-fire {
+    background-color: #f83131;
+  }
+  &-water {
+    background-color: #357eab;
+  }
+  &-grass {
+    background-color: #68971d;
+  }
+  &-electric {
+    background-color: #dfc416;
+  }
+  &-psychic {
+    background-color: #c63f8e;
+  }
+  &-ice {
+    background-color: #0fa0c8;
+  }
+  &-dragon {
+    background-color: #d74a31;
+  }
+  &-dark {
+    background-color: #707070;
+  }
+  &-fairy {
+    background-color: #986e8c;
+  }
+  &-shadow {
+    background-color: #2b2e30;
+  }
+}

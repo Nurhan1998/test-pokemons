@@ -1,0 +1,18 @@
+@import "../../common/styles/variables.scss";
+
+.pokemon-card {
+  min-width: $card-min-width;
+  max-width: $card-max-width;
+  flex: 1;
+  transition: 0.3s;
+
+  &:hover {
+    scale: 1.1;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 205px;
+    height: 205px;
+  }
+}

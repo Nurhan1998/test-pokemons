@@ -1,0 +1,17 @@
+@import "../../common/styles/variables.scss";
+@import "../../common/styles/mixins.scss";
+
+.card {
+  @include flexColumn;
+  gap: 5px;
+
+  .card__avatar {
+    @include flexCenter;
+
+    border-radius: 5px;
+    background-color: $card-background;
+  }
+
+  .card__info {
+  }
+}
