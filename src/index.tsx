@@ -5,7 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import { createStore } from "store/store";
 import "common/styles/layout.scss";
-import PokemonCardsPage from "pages/PokemonCardsPage";
+import PokemonListPage from "pages/pokemonsPage";
 
 const store = createStore();
 
@@ -14,7 +14,7 @@ root.render(
   <BrowserRouter>
     <Provider store={store}>
       <Routes>
-        <Route path="" element={<PokemonCardsPage />} />
+        <Route path="" element={<PokemonListPage />} />
       </Routes>
     </Provider>
   </BrowserRouter>

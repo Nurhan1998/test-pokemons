@@ -1,15 +1,20 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 
-import { pokemonReducer, pokemonTypesReducer } from "../modules/CardsContainer";
+import pokemonSliceReducer from "./pokemons/slice";
+import queryStoreReducer from "./quryStore";
 
 const rootReducer = combineReducers({
-  pokemonReducer,
-  pokemonTypesReducer,
+  pokemonSliceReducer,
+  queryStoreReducer,
 });
 
 export const createStore = () => {
   return configureStore({
     reducer: rootReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware({
+        serializableCheck: false,
+      }),
   });
 };
 

@@ -1,0 +1,8 @@
+@import "../../styles/mixins";
+
+.header {
+  @include flexCenter;
+
+  padding: 20px;
+  margin: 0 auto;
+}

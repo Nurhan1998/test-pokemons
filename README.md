@@ -2,13 +2,8 @@
 
 Hi there in this project I used http://pokeapi.co/ API
 Some issues have appeared during development
-At start this porject takes time to load data from http://pokeapi.co/ API,
-because fetching http://pokeapi.co/pokemon gives me: array of { "name": "pokemonName", url: "pokemonInfoUrl" }
-so because of that I had to do lots of extra fetchings.
-And the API also does not support any filtering, so to make filtering work i had to fetch all pokemon first,
-and then filter them on client side
-Things that should've been done on server side has been done on client side,
-that's why there is the issue at the beginning
+The API does not support any filtering, so filtering works only on downloaded Pokemon's.
+Things that should've been done on server side has been done on client side.
 
 # Getting Started with Create React App
 
