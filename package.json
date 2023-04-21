@@ -1,6 +1,9 @@
 {
   "name": "my-pokedex",
   "version": "0.1.0",
+  "engines" : {
+    "node" : "16.0.0"
+  },
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
