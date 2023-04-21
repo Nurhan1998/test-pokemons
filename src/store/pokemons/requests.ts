@@ -80,11 +80,11 @@ export const fetchPokemon: AsyncThunk<
 
 export const fetchPokemonTypes: AsyncThunk<
   TPokemonTypesAPI,
-  { offset: string },
+  void,
   { state: RootState; rejectValue: string }
 > = createAsyncThunk<
   TPokemonTypesAPI,
-  { offset: string },
+  void,
   { state: RootState; rejectValue: string }
 >("pokemonTypes/fetchAll", async (_, thunkAPI) => {
   try {
